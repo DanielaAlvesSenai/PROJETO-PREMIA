@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P.R.E.M.I.A.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- =====================================================
+         CABEÇALHO
+    ====================================================== -->
+    <header class="cabecalho">
+        <a href="./pag.html">
+        <img src="./img/logo-premia.png" class="logo" alt="P.R.E.M.I.A. Logo">
+        </a>
+
+        <div class="relogio">
+            <span>◷</span>
+            <strong id="hora">00:00:00</strong>
+            <span class="separador">|</span>
+            <strong id="data">00/00/0000</strong>
+        </div>
+
+        <div class="local">
+            <span>TEMPERATURA 24.7°C</span>
+            <span>PICOS-PI</span>
+            <span class="icone-info">ⓘ</span>
+        </div>
+    </header>
+
+    <!-- =====================================================
+         CONTEÚDO PRINCIPAL
+    ====================================================== -->
+    <main class="principal">
+
+        <!-- =================================================
+             LADO ESQUERDO (CARTOES DE STATUS)
+        ================================================== -->
+        <aside class="lateral">
+            <!-- STATUS -->
+            <section class="cartao">
+                <h2>STATUS DO SISTEMA</h2>
+                <div class="informacoes">
+                    <p>• CPU: <b>32%</b></p>
+                    <p>• Memória: <b>68%</b></p>
+                    <p>• Armazenamento: <b>247 / 500 GB</b></p>
+                    <p>• Processos ativos: <b>128</b></p>
+                    <p>• Sistema: <b>Operacional</b></p>
+                    <p>• IA: <b>Ativa</b></p>
+                    <p>• Última sincronização: <b>20:21:48</b></p>
+                </div>
+            </section>
+
+            <!-- AMBIENTE -->
+            <section class="cartao">
+                <h2>AMBIENTE INDUSTRIAL</h2>
+                <div class="informacoes">
+                    <p>• Temperatura: <b>24,7 °C</b></p>
+                    <p>• Umidade: <b>61%</b></p>
+                    <p>• Qualidade do ar: <b>Normal</b></p>
+                    <p>• Ruído operacional: <b>72 dB</b></p>
+                    <p>• Estado geral: <b>Estável</b></p>
+                    <p>• Sensores conectados: <b>18/18</b></p>
+                </div>
+            </section>
+
+            <!-- MÁQUINAS -->
+            <section class="cartao">
+                <h2>MONITORAMENTO DE MÁQUINAS</h2>
+                <div class="informacoes">
+                    <p>• Máquinas ativas: <b>14</b></p>
+                    <p>• Em manutenção: <b>02</b></p>
+                    <p>• Com alerta: <b>01</b></p>
+                    <p>• Operação normal: <b>11</b></p>
+                    <p>• Eficiência média: <b>94,6%</b></p>
+                    <p>• Última inspeção: <b>20:18</b></p>
+                </div>
+            </section>
+
+            <!-- ESTOQUE -->
+            <section class="cartao">
+                <h2>ESTOQUE DE MATÉRIA-PRIMA</h2>
+                <div class="informacoes">
+                    <p>• Matéria-prima disponível: <b>87%</b></p>
+                    <p>• Estoque crítico: <b>02 itens</b></p>
+                    <p>• Consumo diário: <b>3,8 toneladas</b></p>
+                    <p>• Previsão de duração: <b>23 dias</b></p>
+                    <p>• Próxima reposição: <b>04/09/2026</b></p>
+                    <p>• Status: 🟢 <b>Abastecimento estável</b></p>
+                </div>
+            </section>
+        </aside>
+
+        <!-- =================================================
+             CENTRO (ASSISTENTE E CARROSSEL)
+        ================================================== -->
+        <section class="centro">
+
+            <!-- CÍRCULO DA P.R.E.M.I.A. -->
+            <div class="circulo-premia">
+                <div class="onda">
+                    <span></span><span></span><span></span><span></span>
+                    <span></span><span></span><span></span><span></span>
+                    <span></span><span></span><span></span><span></span>
+                </div>
+            </div>
+
+            <img src="./img/logo-premia.png" class="logo-grande" alt="P.R.E.M.I.A. Logo Grande">
+
+            <!-- BOTÕES -->
+            <div class="botoes">
+                <!-- MICROFONE -->
+                <button id="microfone" title="Falar com a P.R.E.M.I.A.">
+                    <svg viewBox="0 0 24 24" class="icone">
+                        <path d="M12 14a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v5a3 3 0 0 0 3 3Z"></path>
+                        <path d="M5 11a7 7 0 0 0 14 0"></path>
+                        <path d="M12 18v4"></path>
+                        <path d="M8 22h8"></path>
+                    </svg>
+                </button>
+
+                <!-- MENSAGEM -->
+                <button id="mensagem" title="Abrir conversa">
+                    <svg viewBox="0 0 24 24" class="icone">
+                        <path d="M20 4H4a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h4l4 3 4-3h4a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Z"></path>
+                        <circle cx="8" cy="11" r="1"></circle>
+                        <circle cx="12" cy="11" r="1"></circle>
+                        <circle cx="16" cy="11" r="1"></circle>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- RESPOSTA DO ÁUDIO -->
+            <div id="respostaAudio" class="resposta-audio">
+                <div class="cabecalho-resposta">
+                    <span class="ponto"></span>
+                    <strong>P.R.E.M.I.A.</strong>
+                </div>
+
+                <div class="mensagem-usuario-audio">
+                    <small>VOCÊ DISSE</small>
+                    <p id="textoUsuario">Clique no microfone e fale.</p>
+                </div>
+
+                <div class="mensagem-bot-audio">
+                    <small>P.R.E.M.I.A.</small>
+                    <p id="textoResposta">Estou pronta para ajudar.</p>
+                </div>
+
+                <div class="status-audio">🔊 SISTEMA DE ÁUDIO ATIVO</div>
+            </div>
+        </section>
+
+        <!-- =================================================
+             LADO DIREITO (CHAT)
+        ================================================== -->
+        <aside id="chatbox" class="chatbox">
+            <div class="chat-cabecalho">
+                <strong>CONVERSA</strong>
+            </div>
+
+            <div id="mensagens" class="mensagens">
+                <div class="mensagem-bot">
+                    Olá! Sou sua assistente virtual P.R.E.M.I.A.<br><br>
+                    Em que posso ajudá-lo(a) hoje?
+                </div>
+            </div>
+
+            <div class="chat-input-area">
+                <input type="text" id="chatInput" placeholder="Escrever uma mensagem...">
+                <button id="sendBtn">➤</button>
+            </div>
+        </aside>
+    </main>
+
+    <!-- =====================================================
+         GRÁFICOS
+    ====================================================== -->
+<section class="graficos">
+    <div class="grafico">
+        <canvas id="barChart"></canvas>
+    </div>
+
+    <div class="grafico">
+        <canvas id="lineChart"></canvas>
+    </div>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
